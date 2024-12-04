@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using CVAppMobile.Resources.Languages;
+using System.ComponentModel;
 using System.Globalization;
 
 namespace CVAppMobile.Helpers
