@@ -3,7 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 using CVAppMobile.Helpers;
 using CVAppMobile.Resources.Languages;
 
-namespace CVAppMobile.ViewModel
+namespace CVAppMobile.ViewModel.Mopup
 {
     public partial class MopupViewModel : ViewmodelBase
     {

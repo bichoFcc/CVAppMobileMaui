@@ -14,6 +14,11 @@
     <Color x:Key="Tertiary">#2B0B98</Color>
 
     <Color x:Key="Color.White">White</Color>
+    <Color x:Key="Color.White50">#FAFAFA</Color>
 
     <Color x:Key="Color.Black">Black</Color>
+
+    <Color x:Key="Color.Green">#13B5C0</Color>
+
+    <Color x:Key="Color.Gray">#BDBDBD</Color>
 </ResourceDictionary>

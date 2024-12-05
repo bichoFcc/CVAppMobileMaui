@@ -117,7 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ExperienceTabbed" xml:space="preserve">
+    <value>Experiencia</value>
+  </data>
   <data name="GenericLoadingIndicator" xml:space="preserve">
     <value>Cargando...</value>
+  </data>
+  <data name="HomeTabbed" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="ProjectsTabbed" xml:space="preserve">
+    <value>Proyectos</value>
+  </data>
+  <data name="SkillsTabbed" xml:space="preserve">
+    <value>Habilidades</value>
   </data>
 </root>

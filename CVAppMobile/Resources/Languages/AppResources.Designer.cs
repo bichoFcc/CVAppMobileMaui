@@ -61,11 +61,47 @@ namespace CVAppMobile.Resources.Languages {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Experiencia.
+        /// </summary>
+        internal static string ExperienceTabbed {
+            get {
+                return ResourceManager.GetString("ExperienceTabbed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Cargando....
         /// </summary>
         internal static string GenericLoadingIndicator {
             get {
                 return ResourceManager.GetString("GenericLoadingIndicator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Inicio.
+        /// </summary>
+        internal static string HomeTabbed {
+            get {
+                return ResourceManager.GetString("HomeTabbed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Proyectos.
+        /// </summary>
+        internal static string ProjectsTabbed {
+            get {
+                return ResourceManager.GetString("ProjectsTabbed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Habilidades.
+        /// </summary>
+        internal static string SkillsTabbed {
+            get {
+                return ResourceManager.GetString("SkillsTabbed", resourceCulture);
             }
         }
     }

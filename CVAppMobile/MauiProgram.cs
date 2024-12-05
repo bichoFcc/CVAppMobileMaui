@@ -7,7 +7,7 @@ namespace CVAppMobile
 {
     public static class MauiProgram
     {
-        public static MauiApp CreateMauiApp()
+        public static MauiApp CreateMauiApp(bool useForUnitTesting = false)
         {
             var builder = MauiApp.CreateBuilder();
             builder
@@ -24,6 +24,31 @@ namespace CVAppMobile
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif
+
+            #region Generic instances
+            builder.Services.AddSingleton<Helpers.CustomNavigation>();
+            #endregion
+
+            #region Business Logic
+            builder.Services.AddSingleton<BusinessLogic.GlobalBusinessLogic>();
+            #endregion
+
+            #region Viewmodels
+            builder.Services.AddSingleton<ViewModel.Home.HomeViewModel>();
+            builder.Services.AddSingleton<ViewModel.Experience.ExperienceViewModel>();
+            builder.Services.AddSingleton<ViewModel.Skills.SkillsViewModel>();
+            builder.Services.AddSingleton<ViewModel.Projects.ProjectsViewModel>();
+            #endregion
+
+            #region ViewModels Popup
+            builder.Services.AddSingleton<ViewModel.Mopup.MopupViewModel>();
+            #endregion
+
+            var app = builder.Build();
+
+            var navigation = app.Services.GetService<Helpers.CustomNavigation>();
+            if (navigation != null)
+                Helpers.GlobalValues.GlobalNavigation = navigation;
 
             return builder.Build();
         }
