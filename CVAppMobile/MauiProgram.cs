@@ -7,7 +7,7 @@ namespace CVAppMobile
 {
     public static class MauiProgram
     {
-        public static MauiApp CreateMauiApp(bool useForUnitTesting = false)
+        public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
             builder
@@ -49,6 +49,8 @@ namespace CVAppMobile
             var navigation = app.Services.GetService<Helpers.CustomNavigation>();
             if (navigation != null)
                 Helpers.GlobalValues.GlobalNavigation = navigation;
+
+            App.ServiceProvider = app.Services;
 
             return builder.Build();
         }
