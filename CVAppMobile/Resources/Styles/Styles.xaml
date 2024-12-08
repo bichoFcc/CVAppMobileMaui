@@ -34,6 +34,11 @@
         <Setter Property="BackgroundColor" Value="Transparent" />
         <Setter Property="FontSize" Value="Medium"/>
     </Style>
+    <Style x:Key="Label.Font.White.Semibold.18" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource Color.White}" />
+        <Setter Property="FontSize" Value="{StaticResource FontSize.18}"/>
+        <Setter Property="FontAttributes" Value="Bold" />
+    </Style>
 
     <!--Custom Theme-->
     <Style x:Key="Custom.MainContent" TargetType="ContentView">
@@ -58,6 +63,13 @@
     </Style>
 
     <!--  BORDER  -->
+    <Style x:Key="Border.HeaderFrame" TargetType="Border">
+        <Setter Property="BackgroundColor" Value="{StaticResource Color.Green}"/>
+        <Setter Property="Stroke" Value="{StaticResource Color.Green}"/>
+        <Setter Property="StrokeThickness" Value="0" />
+        <Setter Property="StrokeShape" Value="RoundRectangle 0,0,0,0" />
+        <Setter Property="Padding" Value="0"/>
+    </Style>
 
     <!--  FRAMES  -->
 

@@ -127,6 +127,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="CustomViews\SimpleHeader.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="CustomViews\SimpleNoHeader.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

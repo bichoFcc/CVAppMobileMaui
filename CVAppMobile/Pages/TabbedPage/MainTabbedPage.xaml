@@ -13,22 +13,22 @@
     UnselectedTabColor="{StaticResource Color.Gray}"
     BarBackgroundColor="{StaticResource Color.White50}">
 
-    <NavigationPage Title="{LAN:MarkupTranslate Name=HomeTabbed}" IconImageSource="tabbed_home">
+    <NavigationPage IconImageSource="tabbed_home">
         <x:Arguments>
             <home:HomePage/>
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage Title="{LAN:MarkupTranslate Name=ExperienceTabbed}" IconImageSource="tabbed_experience">
+    <NavigationPage IconImageSource="tabbed_experience">
         <x:Arguments>
             <experience:ExperiencePage />
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage Title="{LAN:MarkupTranslate Name=SkillsTabbed}" IconImageSource="tabbed_skills">
+    <NavigationPage IconImageSource="tabbed_skills">
         <x:Arguments>
             <skills:SkillsPage />
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage Title="{LAN:MarkupTranslate Name=ProjectsTabbed}" IconImageSource="tabbed_projects">
+    <NavigationPage IconImageSource="tabbed_projects">
         <x:Arguments>
             <projects:ProjectsPage />
         </x:Arguments>
