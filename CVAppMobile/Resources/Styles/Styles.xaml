@@ -34,6 +34,11 @@
         <Setter Property="BackgroundColor" Value="Transparent" />
         <Setter Property="FontSize" Value="Medium"/>
     </Style>
+    <Style x:Key="Label.Font.White50.Regular.12" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource Color.White50}" />
+        <Setter Property="FontSize" Value="{StaticResource FontSize.12}"/>
+        <Setter Property="FontAttributes" Value="None" />
+    </Style>
     <Style x:Key="Label.Font.White.Semibold.18" TargetType="Label">
         <Setter Property="TextColor" Value="{StaticResource Color.White}" />
         <Setter Property="FontSize" Value="{StaticResource FontSize.18}"/>
@@ -70,11 +75,26 @@
         <Setter Property="StrokeShape" Value="RoundRectangle 0,0,0,0" />
         <Setter Property="Padding" Value="0"/>
     </Style>
+    <Style x:Key="Border.Language" TargetType="Border">
+        <Setter Property="BackgroundColor" Value="{StaticResource Color.Green}"/>
+        <Setter Property="Stroke" Value="{StaticResource Color.Green}"/>
+        <Setter Property="StrokeThickness" Value="0" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="StrokeShape" Value="RoundRectangle 20,20,20,20" />
+    </Style>
 
     <!--  FRAMES  -->
 
     <!--  BUTTON  -->
 
     <!--  IMAGEN  -->
+    <Style x:Key="Image.Flags" TargetType="Image">
+        <Setter Property="VerticalOptions" Value="FillAndExpand" />
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="Aspect" Value="AspectFit" />
+        <Setter Property="WidthRequest" Value="22" />
+        <Setter Property="HeightRequest" Value="22" />
+    </Style>
 
 </ResourceDictionary>

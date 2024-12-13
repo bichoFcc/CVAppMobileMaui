@@ -7,7 +7,7 @@
     x:Class="CVAppMobile.Pages.Home.HomePage"
     BackgroundColor="{StaticResource Color.White}">
 
-    <CV:SimpleHeader Processing="{Binding Processing}" ProcessingMessage="{Binding ProcessingMessage}" PageTitle="{LAN:MarkupTranslate Name=HomeTabbed}">
+    <CV:SimpleHeader Processing="{Binding Processing}" ProcessingMessage="{Binding ProcessingMessage}" PageTitle="{LAN:MarkupTranslate Name=HomeTabbed}" ShowFlag="True">
         <CV:SimpleHeader.MainContent>
             <ScrollView>
                 

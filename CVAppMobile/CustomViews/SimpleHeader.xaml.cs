@@ -49,4 +49,17 @@ public partial class SimpleHeader : ContentView
         var me = (SimpleHeader)bindable;
         me.PageTitleLabel.Text = newValue.ToString();
     });
+
+    public bool ShowFlag
+    {
+        get { return (bool)GetValue(ShowFlagProperty); }
+        set { SetValue(ShowFlagProperty, value); }
+    }
+
+    public static readonly BindableProperty ShowFlagProperty = BindableProperty.Create(nameof(ShowFlag), typeof(bool), typeof(SimpleHeader), default(bool),
+    propertyChanged: (bindable, oldValue, newValue) =>
+    {
+        var me = (SimpleHeader)bindable;
+        me.Flag.IsVisible = (bool)newValue;
+    });
 }

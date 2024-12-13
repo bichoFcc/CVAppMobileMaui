@@ -12,8 +12,7 @@
         ColumnSpacing="0">
         <Border 
             Style="{StaticResource Border.HeaderFrame}">
-            <Grid
-                ColumnDefinitions="40,*,40">
+            <Grid>
                 <Label 
                     x:Name="PageTitleLabel" 
                     Grid.Column="1"
@@ -22,6 +21,34 @@
                     VerticalOptions="Center"
                     HorizontalOptions="Center"
                     />
+                <Grid
+                    ColumnDefinitions="10,auto,*,auto,10">
+                    <Border
+                        x:Name="Flag"
+                        Grid.Column="1"
+                        Style="{StaticResource Border.Language}"
+                        VerticalOptions="Center"
+                        IsVisible="False">
+                        <HorizontalStackLayout>
+                            <Image 
+                                Source="mexican_flag"
+                                Style="{StaticResource Image.Flags}"
+                                />
+                            <Label 
+                                Text="Español"
+                                Style="{StaticResource Label.Font.White50.Regular.12}"
+                                VerticalOptions="Center"
+                                Margin="5,0,5,0"
+                                />
+                        </HorizontalStackLayout>
+                    </Border>
+                    <Label
+                        Grid.Column="3"
+                        Text="V. 1.0.0"
+                        Style="{StaticResource Label.Font.White50.Regular.12}"
+                        VerticalOptions="Center"
+                        />
+                </Grid>
             </Grid>
         </Border>
         <ContentView 
