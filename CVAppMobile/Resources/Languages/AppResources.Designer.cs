@@ -88,6 +88,15 @@ namespace CVAppMobile.Resources.Languages {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Español.
+        /// </summary>
+        internal static string LanguageSpanish {
+            get {
+                return ResourceManager.GetString("LanguageSpanish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Proyectos.
         /// </summary>
         internal static string ProjectsTabbed {

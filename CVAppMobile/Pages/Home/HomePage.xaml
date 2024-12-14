@@ -9,8 +9,58 @@
 
     <CV:SimpleHeader Processing="{Binding Processing}" ProcessingMessage="{Binding ProcessingMessage}" PageTitle="{LAN:MarkupTranslate Name=HomeTabbed}" ShowFlag="True">
         <CV:SimpleHeader.MainContent>
-            <ScrollView>
-                
+            <ScrollView
+                VerticalScrollBarVisibility="Never">
+                <Grid
+                    ColumnDefinitions="20,*,20"
+                    RowDefinitions="10,auto,auto,*">
+                    <Grid
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        ColumnDefinitions="auto,10,*"
+                        RowDefinitions="auto,auto,auto,*">
+                        <Border
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            Grid.RowSpan="4"
+                            Style="{StaticResource Border.ProfilePhoto}">
+                            <Image 
+                                Source="profile_photo"
+                                />
+                        </Border>
+                        <Label
+                            Grid.Column="2"
+                            Grid.Row="0"
+                            Text="David Juarez Avila"
+                            Style="{StaticResource Label.Font.Black.Bold.18}"
+                            />
+                        <Label 
+                            Grid.Column="2"
+                            Grid.Row="1"
+                            Text="Desarrollador de Software"
+                            Style="{StaticResource Label.Font.Gray50.Regular.14}"
+                            Margin="0,3,0,0"
+                            />
+                        <Label 
+                            Grid.Column="2"
+                            Grid.Row="2"
+                            Text="Puebla, México"
+                            Style="{StaticResource Label.Font.Black50.Regular.12}"
+                            Margin="0,3,0,0"
+                            />
+                    </Grid>
+                    <Label 
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        Text="Licenciado en ciencias de la computacion con seis años de experiencia, con conocimientos en desarrollo FrontEnd, BackEnd y con bastante experiencia en el desarrollo móvil con Xamarin Forms.
+
+Utilizo la experiencia y los conocimientos adquiridos para la creación de software que facilite la calidad en los procesos laborales de los usuarios.
+
+Me gusta el trabajo en equipo e implementar las mejores practicas en el desarrollo de software. Disfruto afrontar nuevos retos y aprender nuevas tecnologias en cada proyecto que puedo colaborar."
+                        Style="{StaticResource Label.Font.Gray50.Regular.14}"
+                        HorizontalTextAlignment="Start"
+                        />
+                </Grid>
             </ScrollView>
         </CV:SimpleHeader.MainContent>
     </CV:SimpleHeader>

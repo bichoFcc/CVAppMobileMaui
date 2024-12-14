@@ -39,8 +39,23 @@
         <Setter Property="FontSize" Value="{StaticResource FontSize.12}"/>
         <Setter Property="FontAttributes" Value="None" />
     </Style>
-    <Style x:Key="Label.Font.White.Semibold.18" TargetType="Label">
+    <Style x:Key="Label.Font.Black50.Regular.12" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource Color.Black50}" />
+        <Setter Property="FontSize" Value="{StaticResource FontSize.12}"/>
+        <Setter Property="FontAttributes" Value="None" />
+    </Style>
+    <Style x:Key="Label.Font.Gray50.Regular.14" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource Color.Gray50}" />
+        <Setter Property="FontSize" Value="{StaticResource FontSize.14}"/>
+        <Setter Property="FontAttributes" Value="None" />
+    </Style>
+    <Style x:Key="Label.Font.White.Bold.18" TargetType="Label">
         <Setter Property="TextColor" Value="{StaticResource Color.White}" />
+        <Setter Property="FontSize" Value="{StaticResource FontSize.18}"/>
+        <Setter Property="FontAttributes" Value="Bold" />
+    </Style>
+    <Style x:Key="Label.Font.Black.Bold.18" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource Color.Black}" />
         <Setter Property="FontSize" Value="{StaticResource FontSize.18}"/>
         <Setter Property="FontAttributes" Value="Bold" />
     </Style>
@@ -81,6 +96,15 @@
         <Setter Property="StrokeThickness" Value="0" />
         <Setter Property="Padding" Value="0" />
         <Setter Property="StrokeShape" Value="RoundRectangle 20,20,20,20" />
+    </Style>
+    <Style x:Key="Border.ProfilePhoto" TargetType="Border">
+        <Setter Property="BackgroundColor" Value="{StaticResource Color.White50}"/>
+        <Setter Property="Stroke" Value="{StaticResource Color.White50}"/>
+        <Setter Property="StrokeThickness" Value="0" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="StrokeShape" Value="RoundRectangle 5,5,5,5" />
+        <Setter Property="WidthRequest" Value="90" />
+        <Setter Property="HeightRequest" Value="90" />
     </Style>
 
     <!--  FRAMES  -->
