@@ -5,9 +5,9 @@
     xmlns:CV="clr-namespace:CVAppMobile.CustomViews"
     xmlns:LAN="clr-namespace:CVAppMobile.Helpers"
     x:Class="CVAppMobile.Pages.Home.HomePage"
-    BackgroundColor="{StaticResource Color.White}">
+    BackgroundColor="{StaticResource Color.Black}">
 
-    <CV:SimpleHeader Processing="{Binding Processing}" ProcessingMessage="{Binding ProcessingMessage}" PageTitle="{LAN:MarkupTranslate Name=HomeTabbed}" ShowFlag="True">
+    <CV:SimpleHeader Processing="{Binding Processing}" ProcessingMessage="{Binding ProcessingMessage}" ShowFlag="True">
         <CV:SimpleHeader.MainContent>
             <ScrollView
                 VerticalScrollBarVisibility="Never">
@@ -31,25 +31,33 @@
                         <Label
                             Grid.Column="2"
                             Grid.Row="0"
-                            Text="David Juarez Avila"
-                            Style="{StaticResource Label.Font.Black.Bold.18}"
+                            Text="{LAN:MarkupTranslate Name=LabelUserName}"
+                            Style="{StaticResource Label.Font.White.Bold.18}"
                             />
                         <Label 
                             Grid.Column="2"
                             Grid.Row="1"
-                            Text="Desarrollador de Software"
-                            Style="{StaticResource Label.Font.Gray50.Regular.14}"
+                            Text="{LAN:MarkupTranslate Name=LabelWorkStation}"
+                            Style="{StaticResource Label.Font.Gray.Regular.14}"
                             Margin="0,3,0,0"
                             />
-                        <Label 
+                        <HorizontalStackLayout
                             Grid.Column="2"
                             Grid.Row="2"
-                            Text="Puebla, México"
-                            Style="{StaticResource Label.Font.Black50.Regular.12}"
-                            Margin="0,3,0,0"
-                            />
+                            Padding="0"
+                            Margin="0,3,0,0">
+                            <Image 
+                                Source="z_icon_ubication"
+                                Style="{StaticResource Image.CurrentResidence}"
+                                />
+                            <Label 
+                                Text="{LAN:MarkupTranslate Name=LabelCurrentResidence}"
+                                Style="{StaticResource Label.Font.Gray.Regular.12}"
+                                VerticalOptions="Center"
+                                />
+                        </HorizontalStackLayout>
                     </Grid>
-                    <Label 
+                    <!--<Label 
                         Grid.Column="1"
                         Grid.Row="2"
                         Text="Licenciado en ciencias de la computacion con seis años de experiencia, con conocimientos en desarrollo FrontEnd, BackEnd y con bastante experiencia en el desarrollo móvil con Xamarin Forms.
@@ -59,7 +67,7 @@ Utilizo la experiencia y los conocimientos adquiridos para la creación de softw
 Me gusta el trabajo en equipo e implementar las mejores practicas en el desarrollo de software. Disfruto afrontar nuevos retos y aprender nuevas tecnologias en cada proyecto que puedo colaborar."
                         Style="{StaticResource Label.Font.Gray50.Regular.14}"
                         HorizontalTextAlignment="Start"
-                        />
+                        />-->
                 </Grid>
             </ScrollView>
         </CV:SimpleHeader.MainContent>

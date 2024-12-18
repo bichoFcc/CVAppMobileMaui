@@ -5,9 +5,9 @@
     xmlns:CV="clr-namespace:CVAppMobile.CustomViews"
     xmlns:LAN="clr-namespace:CVAppMobile.Helpers"
     x:Class="CVAppMobile.Pages.Skills.SkillsPage"
-    BackgroundColor="{StaticResource Color.White}">
+    BackgroundColor="{StaticResource Color.Black}">
 
-    <CV:SimpleHeader Processing="{Binding Processing}" ProcessingMessage="{Binding ProcessingMessage}" PageTitle="{LAN:MarkupTranslate Name=SkillsTabbed}">
+    <CV:SimpleHeader Processing="{Binding Processing}" ProcessingMessage="{Binding ProcessingMessage}">
         <CV:SimpleHeader.MainContent>
             <ScrollView>
 

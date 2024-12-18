@@ -39,23 +39,18 @@
         <Setter Property="FontSize" Value="{StaticResource FontSize.12}"/>
         <Setter Property="FontAttributes" Value="None" />
     </Style>
-    <Style x:Key="Label.Font.Black50.Regular.12" TargetType="Label">
-        <Setter Property="TextColor" Value="{StaticResource Color.Black50}" />
+    <Style x:Key="Label.Font.Gray.Regular.12" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource Color.Gray}" />
         <Setter Property="FontSize" Value="{StaticResource FontSize.12}"/>
         <Setter Property="FontAttributes" Value="None" />
     </Style>
-    <Style x:Key="Label.Font.Gray50.Regular.14" TargetType="Label">
-        <Setter Property="TextColor" Value="{StaticResource Color.Gray50}" />
+    <Style x:Key="Label.Font.Gray.Regular.14" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource Color.Gray}" />
         <Setter Property="FontSize" Value="{StaticResource FontSize.14}"/>
         <Setter Property="FontAttributes" Value="None" />
     </Style>
     <Style x:Key="Label.Font.White.Bold.18" TargetType="Label">
         <Setter Property="TextColor" Value="{StaticResource Color.White}" />
-        <Setter Property="FontSize" Value="{StaticResource FontSize.18}"/>
-        <Setter Property="FontAttributes" Value="Bold" />
-    </Style>
-    <Style x:Key="Label.Font.Black.Bold.18" TargetType="Label">
-        <Setter Property="TextColor" Value="{StaticResource Color.Black}" />
         <Setter Property="FontSize" Value="{StaticResource FontSize.18}"/>
         <Setter Property="FontAttributes" Value="Bold" />
     </Style>
@@ -84,15 +79,15 @@
 
     <!--  BORDER  -->
     <Style x:Key="Border.HeaderFrame" TargetType="Border">
-        <Setter Property="BackgroundColor" Value="{StaticResource Color.Green}"/>
-        <Setter Property="Stroke" Value="{StaticResource Color.Green}"/>
+        <Setter Property="BackgroundColor" Value="{StaticResource Color.Black}"/>
+        <Setter Property="Stroke" Value="{StaticResource Color.Black}"/>
         <Setter Property="StrokeThickness" Value="0" />
         <Setter Property="StrokeShape" Value="RoundRectangle 0,0,0,0" />
         <Setter Property="Padding" Value="0"/>
     </Style>
     <Style x:Key="Border.Language" TargetType="Border">
-        <Setter Property="BackgroundColor" Value="{StaticResource Color.Green}"/>
-        <Setter Property="Stroke" Value="{StaticResource Color.Green}"/>
+        <Setter Property="BackgroundColor" Value="{StaticResource Color.Black}"/>
+        <Setter Property="Stroke" Value="{StaticResource Color.Black}"/>
         <Setter Property="StrokeThickness" Value="0" />
         <Setter Property="Padding" Value="0" />
         <Setter Property="StrokeShape" Value="RoundRectangle 20,20,20,20" />
@@ -107,8 +102,6 @@
         <Setter Property="HeightRequest" Value="90" />
     </Style>
 
-    <!--  FRAMES  -->
-
     <!--  BUTTON  -->
 
     <!--  IMAGEN  -->
@@ -119,6 +112,13 @@
         <Setter Property="Aspect" Value="AspectFit" />
         <Setter Property="WidthRequest" Value="22" />
         <Setter Property="HeightRequest" Value="22" />
+    </Style>
+    <Style x:Key="Image.CurrentResidence" TargetType="Image">
+        <Setter Property="VerticalOptions" Value="FillAndExpand" />
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="Aspect" Value="AspectFit" />
+        <Setter Property="WidthRequest" Value="17" />
+        <Setter Property="HeightRequest" Value="17" />
     </Style>
 
 </ResourceDictionary>

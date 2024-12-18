@@ -126,6 +126,12 @@
   <data name="HomeTabbed" xml:space="preserve">
     <value>Inicio</value>
   </data>
+  <data name="LabelCurrentResidence" xml:space="preserve">
+    <value>Puebla, México</value>
+  </data>
+  <data name="LabelUserName" xml:space="preserve">
+    <value>David Juarez Avila</value>
+  </data>
   <data name="LanguageSpanish" xml:space="preserve">
     <value>Español</value>
   </data>
@@ -134,5 +140,8 @@
   </data>
   <data name="SkillsTabbed" xml:space="preserve">
     <value>Habilidades</value>
+  </data>
+  <data name="LabelWorkStation" xml:space="preserve">
+    <value>Desarrollador de Software</value>
   </data>
 </root>

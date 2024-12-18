@@ -37,19 +37,6 @@ public partial class SimpleHeader : ContentView
         me.LabelProcessing.Text = newValue.ToString();
     });
 
-    public string PageTitle
-    {
-        get { return (string)GetValue(PageTitleProperty); }
-        set { SetValue(PageTitleProperty, value); }
-    }
-
-    public static readonly BindableProperty PageTitleProperty = BindableProperty.Create(nameof(PageTitle), typeof(string), typeof(SimpleHeader), default(string),
-    propertyChanged: (bindable, oldValue, newValue) =>
-    {
-        var me = (SimpleHeader)bindable;
-        me.PageTitleLabel.Text = newValue.ToString();
-    });
-
     public bool ShowFlag
     {
         get { return (bool)GetValue(ShowFlagProperty); }

@@ -88,6 +88,33 @@ namespace CVAppMobile.Resources.Languages {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Puebla, México.
+        /// </summary>
+        internal static string LabelCurrentResidence {
+            get {
+                return ResourceManager.GetString("LabelCurrentResidence", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a David Juarez Avila.
+        /// </summary>
+        internal static string LabelUserName {
+            get {
+                return ResourceManager.GetString("LabelUserName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Desarrollador de Software.
+        /// </summary>
+        internal static string LabelWorkStation {
+            get {
+                return ResourceManager.GetString("LabelWorkStation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Español.
         /// </summary>
         internal static string LanguageSpanish {

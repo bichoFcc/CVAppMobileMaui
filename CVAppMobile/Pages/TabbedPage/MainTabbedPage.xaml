@@ -9,26 +9,26 @@
     xmlns:projects="clr-namespace:CVAppMobile.Pages.Projects"
     x:Class="CVAppMobile.Pages.TabbedPage.MainTabbedPage"
     Title="MainTabbedPage"
-    SelectedTabColor="{StaticResource Color.Green}"
-    UnselectedTabColor="{StaticResource Color.Gray}"
-    BarBackgroundColor="{StaticResource Color.White50}">
+    SelectedTabColor="{StaticResource Color.White}"
+    UnselectedTabColor="{StaticResource Color.Black50}"
+    BarBackgroundColor="{StaticResource Color.Black}">
 
-    <NavigationPage IconImageSource="tabbed_home">
+    <NavigationPage IconImageSource="tabbed_home" Title="{LAN:MarkupTranslate Name=HomeTabbed}">
         <x:Arguments>
             <home:HomePage/>
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage IconImageSource="tabbed_experience">
+    <NavigationPage IconImageSource="tabbed_experience" Title="{LAN:MarkupTranslate Name=ExperienceTabbed}">
         <x:Arguments>
             <experience:ExperiencePage />
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage IconImageSource="tabbed_skills">
+    <NavigationPage IconImageSource="tabbed_skills" Title="{LAN:MarkupTranslate Name=SkillsTabbed}">
         <x:Arguments>
             <skills:SkillsPage />
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage IconImageSource="tabbed_projects">
+    <NavigationPage IconImageSource="tabbed_projects" Title="{LAN:MarkupTranslate Name=ProjectsTabbed}">
         <x:Arguments>
             <projects:ProjectsPage />
         </x:Arguments>
