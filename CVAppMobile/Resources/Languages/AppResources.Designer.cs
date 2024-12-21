@@ -97,6 +97,24 @@ namespace CVAppMobile.Resources.Languages {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a de experiencia.
+        /// </summary>
+        internal static string LabelExperience {
+            get {
+                return ResourceManager.GetString("LabelExperience", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a 6 años.
+        /// </summary>
+        internal static string LabelSixYears {
+            get {
+                return ResourceManager.GetString("LabelSixYears", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a David Juarez Avila.
         /// </summary>
         internal static string LabelUserName {

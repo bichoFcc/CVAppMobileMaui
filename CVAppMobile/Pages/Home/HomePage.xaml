@@ -13,7 +13,7 @@
                 VerticalScrollBarVisibility="Never">
                 <Grid
                     ColumnDefinitions="20,*,20"
-                    RowDefinitions="10,auto,auto,*">
+                    RowDefinitions="10,auto,20,auto,*">
                     <Grid
                         Grid.Column="1"
                         Grid.Row="1"
@@ -57,17 +57,57 @@
                                 />
                         </HorizontalStackLayout>
                     </Grid>
-                    <!--<Label 
+                    <Border
                         Grid.Column="1"
-                        Grid.Row="2"
-                        Text="Licenciado en ciencias de la computacion con seis años de experiencia, con conocimientos en desarrollo FrontEnd, BackEnd y con bastante experiencia en el desarrollo móvil con Xamarin Forms.
-
-Utilizo la experiencia y los conocimientos adquiridos para la creación de software que facilite la calidad en los procesos laborales de los usuarios.
-
-Me gusta el trabajo en equipo e implementar las mejores practicas en el desarrollo de software. Disfruto afrontar nuevos retos y aprender nuevas tecnologias en cada proyecto que puedo colaborar."
-                        Style="{StaticResource Label.Font.Gray50.Regular.14}"
-                        HorizontalTextAlignment="Start"
-                        />-->
+                        Grid.Row="3"
+                        Style="{StaticResource Border.ProfileAndEducation}">
+                        <Border.Shadow>
+                            <Shadow 
+                                Brush="{StaticResource Color.Black100}"
+                                Offset="2,5"
+                                Radius="40"
+                                Opacity="0.6"
+                                />
+                        </Border.Shadow>
+                        <Grid
+                            ColumnDefinitions="10,*,10,auto,15,auto,10"
+                            RowDefinitions="15,auto,15">
+                            <Grid
+                                Grid.Column="1"
+                                Grid.Row="1"
+                                RowDefinitions="auto,auto"
+                                VerticalOptions="Center">
+                                <Label 
+                                    Grid.Row="0"
+                                    Text="{LAN:MarkupTranslate Name=LabelSixYears}"
+                                    Style="{StaticResource Label.Font.White.Bold.25}"
+                                    />
+                                <Label 
+                                    Grid.Row="1"
+                                    Text="{LAN:MarkupTranslate Name=LabelExperience}"
+                                    Style="{StaticResource Label.Font.White50.Regular.12}"
+                                    />
+                            </Grid>
+                            <Border
+                                Grid.Column="3"
+                                Grid.Row="1"
+                                Style="{StaticResource Border.ProfileAndEducationIcon}">
+                                <Image 
+                                    Source="z_icon_profile"
+                                    Style="{StaticResource Image.ProfileAndEducation}"
+                                    />
+                            </Border>
+                            <Border
+                                Grid.Column="5"
+                                Grid.Row="1"
+                                Style="{StaticResource Border.ProfileAndEducationIcon}">
+                                <Image 
+                                    Source="z_icon_education"
+                                    Style="{StaticResource Image.ProfileAndEducation}"
+                                    />
+                            </Border>
+                        </Grid>
+                    </Border>
                 </Grid>
             </ScrollView>
         </CV:SimpleHeader.MainContent>

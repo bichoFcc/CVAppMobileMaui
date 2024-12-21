@@ -144,4 +144,10 @@
   <data name="LabelWorkStation" xml:space="preserve">
     <value>Desarrollador de Software</value>
   </data>
+  <data name="LabelSixYears" xml:space="preserve">
+    <value>6 años</value>
+  </data>
+  <data name="LabelExperience" xml:space="preserve">
+    <value>de experiencia</value>
+  </data>
 </root>

@@ -11,8 +11,10 @@
 
     <Color x:Key="Color.Black">#000000</Color>
     <Color x:Key="Color.Black50">#565656</Color>
+    <Color x:Key="Color.Black100">#c5c5c5</Color>
 
     <Color x:Key="Color.Green">#50a8bf</Color>
 
     <Color x:Key="Color.Gray">#BDBDBD</Color>
+    <Color x:Key="Color.Gray50">#565758</Color>
 </ResourceDictionary>
