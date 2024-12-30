@@ -17,7 +17,4 @@
 
     <Color x:Key="Color.Gray">#BDBDBD</Color>
     <Color x:Key="Color.Gray50">#565758</Color>
-
-    <Color x:Key="Color.Brown">#c7a873</Color>
-    <Color x:Key="Color.Brown50">#dfd4c0</Color>
 </ResourceDictionary>
