@@ -140,6 +140,8 @@
         <Setter Property="HorizontalOptions" Value="Center" />
     </Style>
     <Style x:Key="Border.DataPersonal" TargetType="Border">
+        <Setter Property="BackgroundColor" Value="{StaticResource Color.Gray50}"/>
+        <Setter Property="Stroke" Value="{StaticResource Color.Gray50}"/>
         <Setter Property="StrokeThickness" Value="0" />
         <Setter Property="Padding" Value="0" />
         <Setter Property="StrokeShape" Value="RoundRectangle 5,5,5,5" />
