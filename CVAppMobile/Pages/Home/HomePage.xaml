@@ -120,12 +120,12 @@
                         Grid.Column="1"
                         Grid.Row="7"
                         ColumnDefinitions="*,10,*,10,*"
-                        RowDefinitions="auto">
+                        RowDefinitions="auto,10,auto">
                         <Border
                             Grid.Column="0"
                             Grid.Row="0"
                             Style="{StaticResource Border.DataPersonal}"
-                            BackgroundColor="#05b1da">
+                            BackgroundColor="{StaticResource Color.Green50}">
                             <Grid
                                 ColumnDefinitions="5,*,5"
                                 RowDefinitions="15,auto,3,auto,15">
@@ -140,8 +140,63 @@
                                 <Label 
                                     Grid.Column="1"
                                     Grid.Row="3"
-                                    Text="31 años"
+                                    Text="22-23-46-42-50"
                                     Style="{StaticResource Label.Font.White.Bold.12}"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    />
+                            </Grid>
+                        </Border>
+                        <Border
+                            Grid.Column="2"
+                            Grid.Row="0"
+                            Style="{StaticResource Border.DataPersonal}"
+                            BackgroundColor="{StaticResource Color.White}">
+                            <Grid
+                                ColumnDefinitions="5,*,5"
+                                RowDefinitions="15,auto,3,auto,15">
+                                <Image
+                                    Grid.Column="1"
+                                    Grid.Row="1"
+                                    Source="z_icon_resident"
+                                    Style="{StaticResource Image.ProfileAndEducation}"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    />
+                                <Label 
+                                    Grid.Column="1"
+                                    Grid.Row="3"
+                                    Text="Puebla"
+                                    Style="{StaticResource Label.Font.White.Bold.12}"
+                                    TextColor="#ab1414"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    />
+                            </Grid>
+                        </Border>
+                        <Border
+                            Grid.Column="0"
+                            Grid.Row="2"
+                            Grid.ColumnSpan="3"
+                            Style="{StaticResource Border.DataPersonal}"
+                            BackgroundColor="{StaticResource Color.White}">
+                            <Grid
+                                ColumnDefinitions="5,*,5"
+                                RowDefinitions="15,auto,3,auto,15">
+                                <Image
+                                    Grid.Column="1"
+                                    Grid.Row="1"
+                                    Source="z_icon_email"
+                                    Style="{StaticResource Image.ProfileAndEducation}"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    />
+                                <Label 
+                                    Grid.Column="1"
+                                    Grid.Row="3"
+                                    Text="david_pleo@hotmail.com"
+                                    Style="{StaticResource Label.Font.White.Bold.12}"
+                                    TextColor="#308a08"
                                     VerticalOptions="Center"
                                     HorizontalOptions="Center"
                                     />

@@ -14,6 +14,7 @@
     <Color x:Key="Color.Black100">#c5c5c5</Color>
 
     <Color x:Key="Color.Green">#50a8bf</Color>
+    <Color x:Key="Color.Green50">#48aba4</Color>
 
     <Color x:Key="Color.Gray">#BDBDBD</Color>
     <Color x:Key="Color.Gray50">#565758</Color>
