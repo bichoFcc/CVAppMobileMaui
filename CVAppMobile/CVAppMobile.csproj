@@ -133,6 +133,9 @@
 	  <MauiXaml Update="CustomViews\SimpleNoHeader.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\ContentViews\BorderPersonalDataView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\Experience\ExperiencePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

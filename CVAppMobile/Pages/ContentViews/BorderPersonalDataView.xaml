@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CVAppMobile.Pages.ContentViews.BorderPersonalDataView">
+
+    <Border
+        x:Name="MainBorder"
+        Style="{StaticResource Border.DataPersonal}">
+        <Grid
+            ColumnDefinitions="5,*,5"
+            RowDefinitions="15,auto,3,auto,15">
+            <Image
+                x:Name="MainImage"
+                Grid.Column="1"
+                Grid.Row="1"
+                Source="z_icon_resident"
+                Style="{StaticResource Image.ProfileAndEducation}"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                />
+            <Label 
+                x:Name="MainLabel"
+                Grid.Column="1"
+                Grid.Row="3"
+                Text="Puebla"
+                Style="{StaticResource Label.Font.White.Bold.12}"
+                TextColor="{StaticResource Color.White100}"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                />
+        </Grid>
+    </Border>
+
+</ContentView>

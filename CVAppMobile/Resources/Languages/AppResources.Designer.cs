@@ -88,6 +88,15 @@ namespace CVAppMobile.Resources.Languages {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Soltero.
+        /// </summary>
+        internal static string LabelCivilStatus {
+            get {
+                return ResourceManager.GetString("LabelCivilStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Puebla, México.
         /// </summary>
         internal static string LabelCurrentResidence {
@@ -97,11 +106,65 @@ namespace CVAppMobile.Resources.Languages {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a david_pleo@hotmail.com.
+        /// </summary>
+        internal static string LabelEmail {
+            get {
+                return ResourceManager.GetString("LabelEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a de experiencia.
         /// </summary>
         internal static string LabelExperience {
             get {
                 return ResourceManager.GetString("LabelExperience", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a No. G31323557.
+        /// </summary>
+        internal static string LabelPassport {
+            get {
+                return ResourceManager.GetString("LabelPassport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Datos personales.
+        /// </summary>
+        internal static string LabelPersonalData {
+            get {
+                return ResourceManager.GetString("LabelPersonalData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a 22-23-46-42-50.
+        /// </summary>
+        internal static string LabelPoneNumber {
+            get {
+                return ResourceManager.GetString("LabelPoneNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Puebla.
+        /// </summary>
+        internal static string LabelPuebla {
+            get {
+                return ResourceManager.GetString("LabelPuebla", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a JUAD930604K37.
+        /// </summary>
+        internal static string LabelRfc {
+            get {
+                return ResourceManager.GetString("LabelRfc", resourceCulture);
             }
         }
         
@@ -124,11 +187,29 @@ namespace CVAppMobile.Resources.Languages {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Vigente.
+        /// </summary>
+        internal static string LabelVisa {
+            get {
+                return ResourceManager.GetString("LabelVisa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Desarrollador de Software.
         /// </summary>
         internal static string LabelWorkStation {
             get {
                 return ResourceManager.GetString("LabelWorkStation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a 31 años.
+        /// </summary>
+        internal static string LabelYearsOld {
+            get {
+                return ResourceManager.GetString("LabelYearsOld", resourceCulture);
             }
         }
         

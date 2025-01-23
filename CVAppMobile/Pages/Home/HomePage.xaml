@@ -2,6 +2,7 @@
 <ContentPage 
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:View="clr-namespace:CVAppMobile.Pages.ContentViews"
     xmlns:CV="clr-namespace:CVAppMobile.CustomViews"
     xmlns:LAN="clr-namespace:CVAppMobile.Helpers"
     x:Class="CVAppMobile.Pages.Home.HomePage"
@@ -111,7 +112,7 @@
                     <Label 
                         Grid.Column="1"
                         Grid.Row="5"
-                        Text="Datos personales"
+                        Text="{LAN:MarkupTranslate Name=LabelPersonalData}"
                         Style="{StaticResource Label.Font.White.Bold.16}"
                         VerticalOptions="Center"
                         HorizontalOptions="Start"
@@ -121,215 +122,56 @@
                         Grid.Row="7"
                         ColumnDefinitions="*,10,*,10,*"
                         RowDefinitions="auto,10,auto,10,auto">
-                        <Border
+                        <View:BorderPersonalDataView
                             Grid.Column="0"
                             Grid.Row="0"
-                            Style="{StaticResource Border.DataPersonal}"
-                            BackgroundColor="{StaticResource Color.Green50}">
-                            <Grid
-                                ColumnDefinitions="5,*,5"
-                                RowDefinitions="15,auto,3,auto,15">
-                                <Image
-                                    Grid.Column="1"
-                                    Grid.Row="1"
-                                    Source="z_icon_phone"
-                                    Style="{StaticResource Image.ProfileAndEducation}"
-                                    VerticalOptions="Center"
-                                    HorizontalOptions="Center"
-                                    />
-                                <Label 
-                                    Grid.Column="1"
-                                    Grid.Row="3"
-                                    Text="22-23-46-42-50"
-                                    Style="{StaticResource Label.Font.White.Bold.12}"
-                                    VerticalOptions="Center"
-                                    HorizontalOptions="Center"
-                                    />
-                            </Grid>
-                        </Border>
-                        <Border
+                            BorderColor="{StaticResource Color.Green50}"
+                            BorderImageSource="z_icon_phone"
+                            BorderText="{LAN:MarkupTranslate Name=LabelPoneNumber}"
+                            />
+                        <View:BorderPersonalDataView
                             Grid.Column="2"
                             Grid.Row="0"
-                            Style="{StaticResource Border.DataPersonal}">
-                            <Grid
-                                ColumnDefinitions="5,*,5"
-                                RowDefinitions="15,auto,3,auto,15">
-                                <Image
-                                    Grid.Column="1"
-                                    Grid.Row="1"
-                                    Source="z_icon_resident"
-                                    Style="{StaticResource Image.ProfileAndEducation}"
-                                    VerticalOptions="Center"
-                                    HorizontalOptions="Center"
-                                    />
-                                <Label 
-                                    Grid.Column="1"
-                                    Grid.Row="3"
-                                    Text="Puebla"
-                                    Style="{StaticResource Label.Font.White.Bold.12}"
-                                    TextColor="{StaticResource Color.White100}"
-                                    VerticalOptions="Center"
-                                    HorizontalOptions="Center"
-                                    />
-                            </Grid>
-                        </Border>
-                        <Border
+                            BorderImageSource="z_icon_resident"
+                            BorderText="{LAN:MarkupTranslate Name=LabelPuebla}"
+                            />
+                        <View:BorderPersonalDataView
                             Grid.Column="4"
                             Grid.Row="0"
-                            Style="{StaticResource Border.DataPersonal}">
-                            <Grid
-                                ColumnDefinitions="5,*,5"
-                                RowDefinitions="15,auto,3,auto,15">
-                                <Image
-                                    Grid.Column="1"
-                                    Grid.Row="1"
-                                    Source="z_icon_old"
-                                    Style="{StaticResource Image.ProfileAndEducation}"
-                                    VerticalOptions="Center"
-                                    HorizontalOptions="Center"
-                                    />
-                                <Label 
-                                    Grid.Column="1"
-                                    Grid.Row="3"
-                                    Text="31 años"
-                                    Style="{StaticResource Label.Font.White.Bold.12}"
-                                    TextColor="{StaticResource Color.White100}"
-                                    VerticalOptions="Center"
-                                    HorizontalOptions="Center"
-                                    />
-                            </Grid>
-                        </Border>
-                        <Border
+                            BorderImageSource="z_icon_old"
+                            BorderText="{LAN:MarkupTranslate Name=LabelYearsOld}"
+                            />
+                        <View:BorderPersonalDataView
                             Grid.Column="0"
                             Grid.Row="2"
                             Grid.ColumnSpan="3"
-                            Style="{StaticResource Border.DataPersonal}">
-                            <Grid
-                                ColumnDefinitions="5,*,5"
-                                RowDefinitions="15,auto,3,auto,15">
-                                <Image
-                                    Grid.Column="1"
-                                    Grid.Row="1"
-                                    Source="z_icon_email"
-                                    Style="{StaticResource Image.ProfileAndEducation}"
-                                    VerticalOptions="Center"
-                                    HorizontalOptions="Center"
-                                    />
-                                <Label 
-                                    Grid.Column="1"
-                                    Grid.Row="3"
-                                    Text="david_pleo@hotmail.com"
-                                    Style="{StaticResource Label.Font.White.Bold.12}"
-                                    TextColor="{StaticResource Color.White100}"
-                                    VerticalOptions="Center"
-                                    HorizontalOptions="Center"
-                                    />
-                            </Grid>
-                        </Border>
-                        <Border
+                            BorderImageSource="z_icon_email"
+                            BorderText="{LAN:MarkupTranslate Name=LabelEmail}"
+                            />
+                        <View:BorderPersonalDataView
                             Grid.Column="4"
                             Grid.Row="2"
-                            Style="{StaticResource Border.DataPersonal}">
-                            <Grid
-                                ColumnDefinitions="5,*,5"
-                                RowDefinitions="15,auto,3,auto,15">
-                                <Image
-                                    Grid.Column="1"
-                                    Grid.Row="1"
-                                    Source="z_icon_rfc"
-                                    Style="{StaticResource Image.ProfileAndEducation}"
-                                    VerticalOptions="Center"
-                                    HorizontalOptions="Center"
-                                    />
-                                <Label 
-                                    Grid.Column="1"
-                                    Grid.Row="3"
-                                    Text="JUAD930604K37"
-                                    Style="{StaticResource Label.Font.White.Bold.12}"
-                                    TextColor="{StaticResource Color.White100}"
-                                    VerticalOptions="Center"
-                                    HorizontalOptions="Center"
-                                    />
-                            </Grid>
-                        </Border>
-                        <Border
+                            BorderImageSource="z_icon_rfc"
+                            BorderText="{LAN:MarkupTranslate Name=LabelRfc}"
+                            />
+                        <View:BorderPersonalDataView
                             Grid.Column="0"
                             Grid.Row="4"
-                            Style="{StaticResource Border.DataPersonal}">
-                            <Grid
-                                ColumnDefinitions="5,*,5"
-                                RowDefinitions="15,auto,3,auto,15">
-                                <Image
-                                    Grid.Column="1"
-                                    Grid.Row="1"
-                                    Source="z_icon_pasport"
-                                    Style="{StaticResource Image.ProfileAndEducation}"
-                                    VerticalOptions="Center"
-                                    HorizontalOptions="Center"
-                                    />
-                                <Label 
-                                    Grid.Column="1"
-                                    Grid.Row="3"
-                                    Text="No. G31323557"
-                                    Style="{StaticResource Label.Font.White.Bold.12}"
-                                    TextColor="{StaticResource Color.White100}"
-                                    VerticalOptions="Center"
-                                    HorizontalOptions="Center"
-                                    />
-                            </Grid>
-                        </Border>
-                        <Border
+                            BorderImageSource="z_icon_pasport"
+                            BorderText="{LAN:MarkupTranslate Name=LabelPassport}"
+                            />
+                        <View:BorderPersonalDataView
                             Grid.Column="2"
                             Grid.Row="4"
-                            Style="{StaticResource Border.DataPersonal}">
-                            <Grid
-                                ColumnDefinitions="5,*,5"
-                                RowDefinitions="15,auto,3,auto,15">
-                                <Image
-                                    Grid.Column="1"
-                                    Grid.Row="1"
-                                    Source="z_icon_visa"
-                                    Style="{StaticResource Image.ProfileAndEducation}"
-                                    VerticalOptions="Center"
-                                    HorizontalOptions="Center"
-                                    />
-                                <Label 
-                                    Grid.Column="1"
-                                    Grid.Row="3"
-                                    Text="Vigente"
-                                    Style="{StaticResource Label.Font.White.Bold.12}"
-                                    TextColor="{StaticResource Color.White100}"
-                                    VerticalOptions="Center"
-                                    HorizontalOptions="Center"
-                                    />
-                            </Grid>
-                        </Border>
-                        <Border
+                            BorderImageSource="z_icon_visa"
+                            BorderText="{LAN:MarkupTranslate Name=LabelVisa}"
+                            />
+                        <View:BorderPersonalDataView
                             Grid.Column="4"
                             Grid.Row="4"
-                            Style="{StaticResource Border.DataPersonal}">
-                            <Grid
-                                ColumnDefinitions="5,*,5"
-                                RowDefinitions="15,auto,3,auto,15">
-                                <Image
-                                    Grid.Column="1"
-                                    Grid.Row="1"
-                                    Source="z_icon_civil_status"
-                                    Style="{StaticResource Image.ProfileAndEducation}"
-                                    VerticalOptions="Center"
-                                    HorizontalOptions="Center"
-                                    />
-                                <Label 
-                                    Grid.Column="1"
-                                    Grid.Row="3"
-                                    Text="Soltero"
-                                    Style="{StaticResource Label.Font.White.Bold.12}"
-                                    TextColor="{StaticResource Color.White100}"
-                                    VerticalOptions="Center"
-                                    HorizontalOptions="Center"
-                                    />
-                            </Grid>
-                        </Border>
+                            BorderImageSource="z_icon_civil_status"
+                            BorderText="{LAN:MarkupTranslate Name=LabelCivilStatus}"
+                            />
                     </Grid>
                 </Grid>
             </ScrollView>

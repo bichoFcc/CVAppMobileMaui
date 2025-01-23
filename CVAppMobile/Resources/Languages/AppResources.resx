@@ -150,4 +150,31 @@
   <data name="LabelExperience" xml:space="preserve">
     <value>de experiencia</value>
   </data>
+  <data name="LabelPersonalData" xml:space="preserve">
+    <value>Datos personales</value>
+  </data>
+  <data name="LabelPoneNumber" xml:space="preserve">
+    <value>22-23-46-42-50</value>
+  </data>
+  <data name="LabelPuebla" xml:space="preserve">
+    <value>Puebla</value>
+  </data>
+  <data name="LabelYearsOld" xml:space="preserve">
+    <value>31 años</value>
+  </data>
+  <data name="LabelEmail" xml:space="preserve">
+    <value>david_pleo@hotmail.com</value>
+  </data>
+  <data name="LabelRfc" xml:space="preserve">
+    <value>JUAD930604K37</value>
+  </data>
+  <data name="LabelPassport" xml:space="preserve">
+    <value>No. G31323557</value>
+  </data>
+  <data name="LabelVisa" xml:space="preserve">
+    <value>Vigente</value>
+  </data>
+  <data name="LabelCivilStatus" xml:space="preserve">
+    <value>Soltero</value>
+  </data>
 </root>
