@@ -35,6 +35,7 @@ namespace CVAppMobile
 
             #region Viewmodels
             builder.Services.AddSingleton<ViewModel.Home.HomeViewModel>();
+            builder.Services.AddSingleton<ViewModel.Home.AboutUsViewmodel>();
             builder.Services.AddSingleton<ViewModel.Experience.ExperienceViewModel>();
             builder.Services.AddSingleton<ViewModel.Skills.SkillsViewModel>();
             builder.Services.AddSingleton<ViewModel.Projects.ProjectsViewModel>();

@@ -5,6 +5,8 @@
     xmlns:View="clr-namespace:CVAppMobile.Pages.ContentViews"
     xmlns:CV="clr-namespace:CVAppMobile.CustomViews"
     xmlns:LAN="clr-namespace:CVAppMobile.Helpers"
+    xmlns:VM="clr-namespace:CVAppMobile.ViewModel.Home"
+    x:DataType="VM:HomeViewModel"
     x:Class="CVAppMobile.Pages.Home.HomePage"
     BackgroundColor="{StaticResource Color.Black}">
 
@@ -93,6 +95,11 @@
                                 Grid.Column="3"
                                 Grid.Row="1"
                                 Style="{StaticResource Border.ProfileAndEducationIcon}">
+                                <Border.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                        Command="{Binding SendAboutUsCommand}"
+                                        />
+                                </Border.GestureRecognizers>
                                 <Image 
                                     Source="z_icon_profile"
                                     Style="{StaticResource Image.ProfileAndEducation}"

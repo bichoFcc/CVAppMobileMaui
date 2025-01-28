@@ -239,5 +239,14 @@ namespace CVAppMobile.Resources.Languages {
                 return ResourceManager.GetString("SkillsTabbed", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Acerca de mi.
+        /// </summary>
+        internal static string TitleAboutUs {
+            get {
+                return ResourceManager.GetString("TitleAboutUs", resourceCulture);
+            }
+        }
     }
 }

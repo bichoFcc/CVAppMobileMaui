@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:LAN="clr-namespace:CVAppMobile.Helpers"
+    xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+    x:Class="CVAppMobile.CustomViews.ArrowBackHeader">
+
+    <!--Page view con título y botón de sincronización-->
+    <Grid 
+         RowDefinitions="65,*"
+         RowSpacing="0" 
+         ColumnSpacing="0">
+        <Border 
+            Style="{StaticResource Border.HeaderFrame}">
+            <Label
+                x:Name="MainTitle"
+                Style="{StaticResource Label.TitleLabel}"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                />
+        </Border>
+        <ContentView 
+             x:Name="PageContent" 
+             Grid.Row="1"
+             Style="{StaticResource Custom.MainContent}"
+             />
+        <Grid 
+             x:Name="GridLoading" 
+             Grid.Row="0" 
+             Grid.RowSpan="2"
+             VerticalOptions="FillAndExpand"
+             HorizontalOptions="FillAndExpand"
+             IsVisible="False">
+            <BoxView 
+                 Style="{StaticResource Boxview.BackgroundLoadingGrid}"
+                 />
+            <VerticalStackLayout 
+                Style="{StaticResource Stack.LoadingFieldsStack}">
+                <skia:SKLottieView 
+                     Source="sigma-loader-data.json"
+                     HorizontalOptions="FillAndExpand" 
+                     RepeatMode="Restart" 
+                     RepeatCount="-1" 
+                     HeightRequest="100"
+                     />
+                <Label 
+                     x:Name="LabelProcessing" 
+                     Style="{StaticResource Label.LoadingLabel}"
+                     />
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+
+</ContentView>

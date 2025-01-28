@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:View="clr-namespace:CVAppMobile.Pages.ContentViews"
+    xmlns:CV="clr-namespace:CVAppMobile.CustomViews"
+    xmlns:LAN="clr-namespace:CVAppMobile.Helpers"
+    xmlns:VM="clr-namespace:CVAppMobile.ViewModel.Home"
+    x:DataType="VM:AboutUsViewmodel"
+    x:Class="CVAppMobile.Pages.Home.AboutUsPage"
+    BackgroundColor="{StaticResource Color.Black}">
+
+    <CV:ArrowBackHeader TitlePage="{LAN:MarkupTranslate Name=TitleAboutUs}">
+        <CV:ArrowBackHeader.MainContent>
+            <Grid>
+                <Border
+                    VerticalOptions="End"
+                    HorizontalOptions="End"
+                    Style="{StaticResource Border.BackPage}"
+                    Margin="0,0,20,20">
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer 
+                            Command="{Binding GoBackCommand}"
+                            />
+                    </Border.GestureRecognizers>
+                    <Border.Shadow>
+                        <Shadow 
+                            Brush="{StaticResource Color.White50}"
+                            Offset="2,5"
+                            Radius="40"
+                            Opacity="0.8"
+                            />
+                    </Border.Shadow>
+                    <Image
+                        Source="z_icon_arrow_back"
+                        Style="{StaticResource Image.ProfileAndEducation}"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        />
+                </Border>
+                <Grid
+                    ColumnDefinitions="10,*,10"
+                    RowDefinitions="10,auto,20,*">
+
+                </Grid>
+            </Grid>
+        </CV:ArrowBackHeader.MainContent>
+    </CV:ArrowBackHeader>
+
+</ContentPage>

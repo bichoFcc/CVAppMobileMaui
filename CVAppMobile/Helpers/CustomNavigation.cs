@@ -24,9 +24,9 @@ namespace CVAppMobile.Helpers
         {
             switch (pageKey)
             {
-                //case nameof(Pages.Menu.DataBase.TablesPage):
-                //    await App.Current.MainPage.Navigation.PushAsync(new Pages.Menu.DataBase.TablesPage());
-                //    break;
+                case nameof(Pages.Home.AboutUsPage):
+                    await App.Current.MainPage.Navigation.PushAsync(new Pages.Home.AboutUsPage());
+                    break;
                 default:
                     break;
             }

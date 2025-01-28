@@ -6,7 +6,7 @@
     xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
     x:Class="CVAppMobile.CustomViews.SimpleHeader">
 
-    <!--Page view con título y botón de sincronización-->
+    <!--Page view con bandera de idioma y numero de versión-->
     <Grid 
         RowDefinitions="65,*"
         RowSpacing="0" 

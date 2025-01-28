@@ -177,4 +177,7 @@
   <data name="LabelCivilStatus" xml:space="preserve">
     <value>Soltero</value>
   </data>
+  <data name="TitleAboutUs" xml:space="preserve">
+    <value>Acerca de mi</value>
+  </data>
 </root>
