@@ -40,8 +40,67 @@
                 </Border>
                 <Grid
                     ColumnDefinitions="10,*,10"
-                    RowDefinitions="10,auto,20,*">
-
+                    RowDefinitions="10,auto,30,auto,*">
+                    <Grid
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        ColumnDefinitions="auto,10,*"
+                        RowDefinitions="auto,auto,*">
+                        <Image 
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            Grid.RowSpan="4"
+                            Source="z_icon_about_us"
+                            WidthRequest="130"
+                            />
+                        <Label
+                            Grid.Column="2"
+                            Grid.Row="0"
+                            Text="{LAN:MarkupTranslate Name=LabelUserName}"
+                            Style="{StaticResource Label.Font.White.Bold.18}"
+                            />
+                        <Label 
+                            Grid.Column="2"
+                            Grid.Row="1"
+                            Text="{LAN:MarkupTranslate Name=LabelWorkStation}"
+                            Style="{StaticResource Label.Font.Gray.Regular.14}"
+                            Margin="0,3,0,0"
+                            />
+                    </Grid>
+                    <Grid
+                        Grid.Column="1"
+                        Grid.Row="3"
+                        RowDefinitions="auto,10,auto">
+                        <Label 
+                            Grid.Row="0"
+                            Text="Mis fortalezas:"
+                            Style="{StaticResource Label.Font.White.Bold.16}"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Start"
+                            />
+                        <ScrollView
+                            HorizontalScrollBarVisibility="Never"
+                            Grid.Row="2">
+                            <Grid
+                                ColumnDefinitions="auto,auto,auto"
+                                RowDefinitions="auto,3,auto">
+                                <Label 
+                                    Grid.Column="0"
+                                    Grid.Row="0"
+                                    Text="Trabajar en equipo"
+                                    Style="{StaticResource Label.Font.White50.Regular.12}"
+                                    VerticalOptions="Center"
+                                    HorizontalOptions="Center"
+                                    />
+                                <Image
+                                    Grid.Column="0"
+                                    Grid.Row="2"
+                                    Source="z_icon_strengths"
+                                    Style="{StaticResource Image.CurrentResidence}"
+                                    />
+                            </Grid>
+                        </ScrollView>
+                    </Grid>
                 </Grid>
             </Grid>
         </CV:ArrowBackHeader.MainContent>
