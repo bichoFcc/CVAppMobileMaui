@@ -5,6 +5,7 @@
     xmlns:View="clr-namespace:CVAppMobile.Pages.ContentViews"
     xmlns:CV="clr-namespace:CVAppMobile.CustomViews"
     xmlns:LAN="clr-namespace:CVAppMobile.Helpers"
+    xmlns:Models="clr-namespace:CVAppMobile.Model.Custom"
     xmlns:VM="clr-namespace:CVAppMobile.ViewModel.Home"
     x:DataType="VM:AboutUsViewmodel"
     x:Class="CVAppMobile.Pages.Home.AboutUsPage"
@@ -78,28 +79,34 @@
                             VerticalOptions="Center"
                             HorizontalOptions="Start"
                             />
-                        <ScrollView
-                            HorizontalScrollBarVisibility="Never"
-                            Grid.Row="2">
-                            <Grid
-                                ColumnDefinitions="auto,auto,auto"
-                                RowDefinitions="auto,3,auto">
-                                <Label 
-                                    Grid.Column="0"
-                                    Grid.Row="0"
-                                    Text="Trabajar en equipo"
-                                    Style="{StaticResource Label.Font.White50.Regular.12}"
-                                    VerticalOptions="Center"
-                                    HorizontalOptions="Center"
-                                    />
-                                <Image
-                                    Grid.Column="0"
-                                    Grid.Row="2"
-                                    Source="z_icon_strengths"
-                                    Style="{StaticResource Image.CurrentResidence}"
-                                    />
-                            </Grid>
-                        </ScrollView>
+                        <CollectionView
+                            Grid.Row="2"
+                            ItemsSource="{Binding AttributeList}">
+                            <CollectionView.ItemsLayout>
+                                <LinearItemsLayout Orientation="Horizontal" />
+                            </CollectionView.ItemsLayout>
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate
+                                    x:DataType="Models:AttributesCustom">
+                                    <Grid
+                                        RowDefinitions="auto,3,auto"
+                                        Margin="0,0,15,0">
+                                        <Label 
+                                            Grid.Row="0"
+                                            Text="{Binding Description}"
+                                            Style="{StaticResource Label.Font.White50.Regular.12}"
+                                            VerticalOptions="Center"
+                                            HorizontalOptions="Center"
+                                            />
+                                        <Image
+                                            Grid.Row="2"
+                                            Source="z_icon_strengths"
+                                            Style="{StaticResource Image.CurrentResidence}"
+                                            />
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
                     </Grid>
                 </Grid>
             </Grid>

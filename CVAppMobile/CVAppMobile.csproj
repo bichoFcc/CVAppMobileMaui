@@ -108,10 +108,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Model\Custom\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <Compile Update="Resources\Languages\AppResources.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
